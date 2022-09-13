@@ -42,9 +42,6 @@ app.use("/post",async (req,res,next)=>{
 // post routs
 app.use("/post" , postRouts);
 
-
-
-
 app.listen(3000, ()=>{
     console.log("server is up")
 })

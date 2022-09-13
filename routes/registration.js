@@ -14,7 +14,6 @@ router.get("/",(req,res)=>{
     res.json({messgae:"Welcome to register Page"})
 });
 
-
 router.post("/",body("name").isAlpha(), body("email").isEmail(), async(req,res)=>{
     const errors = validationResult(req);
     if (!errors.isEmpty()) {

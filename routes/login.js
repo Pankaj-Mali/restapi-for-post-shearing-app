@@ -38,6 +38,7 @@ router.post("/",body("email").isEmail(), async(req,res)=>{
                     status:"Success",
                     message:token
                 })
+                
             }else{
                  return res.status(401).json({
                     status:"failuar",
